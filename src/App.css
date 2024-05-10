@@ -250,7 +250,7 @@ margin-left: 35%;
  
 
 
-  @media (max-width: 1199px) {
+  @media (max-width: 600px) {
     .wel-blg-init
   
   {
@@ -272,7 +272,7 @@ margin-left: 35%;
    -webkit-text-fill-color: transparent;
    display: inline-block;
    margin-top: 40%;
-       font-size: 22px;
+       font-size: 18px;
  }
 }
 
@@ -512,16 +512,14 @@ width: 16rem;
     background-color: white; 
     height: fit-content;
 }
-.container3{
+.container3, .container4{
   flex-direction: column;
   margin-left:25%;/***/
   margin-top: 0;/***/
   margin-bottom: 0;/***/
   text-align: center;
 }
-.container4{
- visibility: hidden;
-}
+
 .qaform{
  visibility: hidden;
 }
