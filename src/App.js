@@ -20,12 +20,9 @@ function App() {
   <span id='home'></span>
 <br/><br/><br/><br/>
 <div className='wel-blg' >
-<br/><br/><br/><br/><br/><br/><br/><br/>
   <h1 className='wel-blg-init'>Welcome to our Website</h1>
 </div>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/>
+
  </div>
 
   <About />

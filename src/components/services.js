@@ -7,7 +7,8 @@ const services =()=> {
   
     return (
       <div className='ServContainer' id='services'>
-        <h1>SERVICES</h1>
+        <h1 className='servheader'>SERVICES</h1>
+        <div className='kra'>
       <div className='servc' >
         
         <img src={require('./kra.webp')} alt='KRA' className='containerImg' />
@@ -15,6 +16,7 @@ const services =()=> {
         <p className='description'>Ksh 500 for registration<br/>
         Ksh 200 for Returns</p>
         <a href='www.google.com' className='crdBtn'>Learn More</a>
+        </div>
         </div>
         <div className='NssF'>
         <div className='servc'>

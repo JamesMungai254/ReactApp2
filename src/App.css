@@ -1,12 +1,24 @@
+@media (min-width:1300px){
 .App{
+  height: 700px;
   filter: brightness(70%);
  background-image: url('cover.jpg');
-background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
-
+ background-size: cover;
+ 
 }
-
+}
+@media (max-width: 600px){
+  .App{
+    height: 400px;
+    filter: brightness(70%);
+   background-image: url('cover.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   
+  }
+}
 
 /* ************************************************************* */
 /*Site Name*/
@@ -232,7 +244,7 @@ margin-left: 35%;
    text-fill-color: transparent;
    animation: textclip 2s linear infinite;
    display: inline-block;
-   
+   margin-top: 25%;
        font-size: 40px;
  }
  
@@ -242,7 +254,6 @@ margin-left: 35%;
     .wel-blg-init
   
   {
-   
     text-transform: uppercase;
    background-image: linear-gradient(
      -225deg,
@@ -259,30 +270,32 @@ margin-left: 35%;
    text-fill-color: transparent;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   animation: textclip 2s linear infinite;
    display: inline-block;
-   
-       font-size: 100%;
+   margin-top: 40%;
+       font-size: 22px;
  }
- 
- @keyframes textclip {
-   to {
-     background-position: 200% center;
-   }
-  }
+}
 
+/* ************************************************************* */
+                    /*Student*/
+/* ************************************************************* */
+
+ @media (max-width: 600px){
+  .stdhead{
+    font-size: 22px;
   }
+ }
 
   /* ************************************************************* */
   /* form Templet */
   /* ************************************************************* */
 
-  form{
+ .form-temp, .qaform {
+  align-items: center;
     background-color: rgb(112, 112, 112);
-    opacity: 0.9;
    width: 400px;
-   margin-left: 35%;
    border-radius: 3%;
+   
   }
 
 
@@ -345,12 +358,24 @@ margin-left: 35%;
     color: #000000;
     text-align: center;
   }
+  .aboutContainer p{
+    font-size: 25px;
+  }
+  @media (max-width: 600px){
+    .aboutContainer{
+      text-align: left;
+    }
+  }
+  
 
  /* ************************************************************* */
                        /* SERVICE */
   /* ************************************************************* */
   
+.ServContainer{
+  height: fit-content;
 
+}
   
   
   .servc{
@@ -390,7 +415,7 @@ width: 16rem;
 }
 .NssF{
   float: right;
-  margin-top: -310px;
+ margin-top: -310px;
   margin-right: 5%;
 }
 .NhiF{
@@ -398,22 +423,18 @@ width: 16rem;
   margin-top: -310px;
   margin-right: 22%;
 }
-@media (max-width: 1199px){
-
-
-  .NssF{
+@media (max-width: 600px){
+ .servheader{
+  text-align: center;
+ }
+ .kra, .NssF, .NhiF{
     float: left;
-   margin-left: 30%;
+   margin-left: 33%;
   margin-top: 0px;
   margin-right: 0px;
 
   }
-  .NhiF{
-    float: left;
-  margin-left: 30%;
-  margin-top: 0px;
-  margin-right: 0px;
-  }
+ 
 }
 
 /* ************************************************************* */
@@ -452,9 +473,9 @@ width: 16rem;
 
 /*Form*/
 .qaform{
-  position: relative;
-  margin-left: 40%;
-  margin-top: -620px;
+  
+  margin-left: 50%;
+  margin-top: -650px;
 }
 
 
@@ -470,7 +491,10 @@ width: 16rem;
 }
 
 /*Contact media size*/
-@media (max-width: 1199px){
+@media (max-width: 600px){
+  p{
+    font-size: 15px;
+  }
   .contact{
     background-color: #ffffff;
     height: auto;
@@ -516,3 +540,15 @@ width: 16rem;
   font-size: 12px;
 }
 
+/* Font sizes */
+@media (max-width: 600px){
+  .aboutContainer p{
+    font-size: 20px;
+  }
+  .footer{
+    margin-top:25%;
+  }
+  .logform{
+    visibility: hidden;
+  }
+}

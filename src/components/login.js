@@ -1,14 +1,12 @@
 
-import React, { Component } from 'react'
+import React from 'react'
 
-export class login extends Component {
-  static propTypes = {}
 
-  render() {
+  const login=()=>{
     return (
       <div>
         
-        <div className='form-temp' style={{position:'relative'}}>
+        <div className='form-temp' >
  <form >
 <input type='text' name='Fname' placeholder='Full Name'/><br/>
 <input type='text' name='uname' placeholder='User Name'/><br/>
@@ -21,6 +19,6 @@ export class login extends Component {
       </div>
     )
   }
-}
+
 
 export default login
